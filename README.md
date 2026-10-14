@@ -9,7 +9,7 @@
 </h3>
 
 <p align="center">
-  A pixel-art RPG powered by your daily walk.<br />
+  An indie game pixel-art RPG powered by your daily walk.<br />
   Turn real-world steps into Step Coins, forge legendary gear, and fight your way down the dungeon.<br />
   Built to get us moving, feeling good and living healthier.
 </p>
