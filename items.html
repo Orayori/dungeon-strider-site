@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Item Codex · Dungeon Strider</title><meta name="description" content="Search and filter the current Dungeon Strider equipment database by name, slot, rarity and tier."><meta name="theme-color" content="#171512">
+<link rel="stylesheet" href="assets/site.css"></head><body>
+<header class="site-header">
+  <div class="brand-row">
+    <div class="brand-mark" aria-hidden="true">DS</div>
+    <div><p class="brand-name">DUNGEON STRIDER</p><p class="brand-tagline">Walk in the real world. Conquer the dungeon.</p></div>
+  </div>
+  <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="guide.html">How to Play</a><a href="items.html" aria-current="page">Item Codex</a><a href="dungeons.html">Dungeon Guide</a><a href="milestones.html">Milestones</a><a href="updates.html">Updates</a><a href="community.html">Community</a><a href="privacy.html">Privacy</a></nav>
+</header>
+<main class="page">
+<section class="hero"><p class="eyebrow">Equipment archive</p><h1>Item Codex</h1><p class="lead">Explore the game's current equipment list. Compare tier, rarity, Step Coin price, and the ATK, DEF and HP bonuses before investing in an upgrade.</p><div class="hero-actions"><a class="button secondary" href="guide.html">How equipment works</a></div></section>
+<div class="stats"><div class="stat"><strong id="catalog-total">300</strong><span>Equipment entries</span></div><div class="stat"><strong>6</strong><span>Equipment slots</span></div><div class="stat"><strong>50</strong><span>Current tiers per slot</span></div><div class="stat"><strong id="catalog-version">0.1.0</strong><span>Content catalog version</span></div></div>
+<h2>Find equipment</h2><section class="panel"><div class="filters">
+<div class="field"><label for="item-search">Search name or description</label><input id="item-search" type="search" placeholder="e.g. hood, wings, blade…" autocomplete="off"></div>
+<div class="field"><label for="slot-filter">Equipment slot</label><select id="slot-filter"><option value="all">All slots</option></select></div>
+<div class="field"><label for="rarity-filter">Rarity</label><select id="rarity-filter"><option value="all">All rarities</option></select></div>
+<div class="field"><label for="tier-filter">Exact tier</label><input id="tier-filter" type="number" min="1" max="50" inputmode="numeric" placeholder="Any tier"></div>
+</div><div class="result-line"><span id="items-count" aria-live="polite">Loading items…</span><div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap"><label for="sort-filter" class="muted">Sort</label><select id="sort-filter" style="min-height:38px;padding:6px 9px;border:1px solid var(--line);border-radius:8px;background:#130f0d"><option value="name">Name</option><option value="tier-asc">Tier: low to high</option><option value="tier-desc">Tier: high to low</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="atk-desc">Highest ATK</option></select><button type="button" id="reset-filters">Reset</button></div></div></section>
+<div id="items-results" class="item-grid" style="margin-top:14px" aria-live="polite"><div class="empty-state">Loading the item catalog…</div></div>
+<p class="muted" style="margin-top:16px">Item data and sprites are generated from the game’s <span class="kbd">src/data/step-rpg-items.json</span> file. Catalog prices are shown in Step Coins (SC).</p>
+</main>
+<footer class="site-footer"><span>Dungeon Strider · Offline-first step-counting RPG</span><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="mailto:orayori@outlook.com">Contact</a><a href="https://github.com/Orayori/dungeon-strider">GitHub</a></div></footer>
+<script src="assets/codex-data.js"></script><script src="assets/items.js"></script>
+</body></html>
