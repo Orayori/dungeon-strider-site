@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dungeon Guide · Dungeon Strider</title><meta name="description" content="Preview dungeon encounters, monster stats, boss floors and Step Coin rewards using current game settings."><meta name="theme-color" content="#171512">
+<link rel="stylesheet" href="assets/site.css"></head><body>
+<header class="site-header">
+  <div class="brand-row">
+    <div class="brand-mark" aria-hidden="true">DS</div>
+    <div><p class="brand-name">DUNGEON STRIDER</p><p class="brand-tagline">Walk in the real world. Conquer the dungeon.</p></div>
+  </div>
+  <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="guide.html">How to Play</a><a href="items.html">Item Codex</a><a href="dungeons.html" aria-current="page">Dungeon Guide</a><a href="milestones.html">Milestones</a><a href="updates.html">Updates</a><a href="community.html">Community</a><a href="privacy.html">Privacy</a></nav>
+</header>
+<main class="page">
+<section class="hero"><p class="eyebrow">Depth and danger</p><h1>Dungeon Guide</h1><p class="lead">Preview enemy stats for a floor and browse the monster roster pulled from the current game content. Higher floors scale up, and every tenth floor is a boss floor.</p><div class="hero-actions"><a class="button" href="items.html">Prepare your gear →</a><a class="button secondary" href="guide.html">Read the handbook</a></div></section>
+<h2>Floor preview</h2><section class="panel"><p class="muted">Enter a floor number to calculate the encounter using the game's current monster selection and scaling rules. This is a guide calculator, not a live connection to a player's save.</p><div style="display:flex;flex-wrap:wrap;align-items:end;gap:10px"><div class="field" style="min-width:180px"><label for="floor-input">Dungeon floor</label><input id="floor-input" type="number" min="1" max="999999" value="1" inputmode="numeric"></div><button id="calculate-floor" type="button">Preview floor</button><span id="item-count" class="muted" style="margin-left:auto">Loading current content…</span></div></section><div id="floor-result" style="margin-top:14px" aria-live="polite"></div>
+<h2>Monster roster</h2><p class="muted">Base stats below are from the content file. The floor preview adds per-floor growth and applies boss multipliers where configured.</p><div id="monster-list" class="two-col"><div class="empty-state">Loading monster definitions…</div></div>
+<h2>How scaling works</h2><div class="two-col"><section class="panel"><h3>Normal encounters</h3><p>Monster HP, ATK and DEF gain configured increments per floor after floor 1. The actual monster is selected from the data-driven roster based on its allowed floor range.</p><div class="formula">steps below floor = max(0, floor − 1)<br>HP = base HP + HP growth × steps<br>ATK = base ATK + ATK growth × steps<br>DEF = base DEF + DEF growth × steps</div></section><section class="panel"><h3>Boss encounters</h3><p>Boss floors occur on each configured multiple of ten. The current settings apply a 2× monster stat multiplier and a 4× reward multiplier to boss floors.</p><div class="formula">boss floor: floor % 10 = 0<br>boss stat multiplier: 2×<br>boss reward multiplier: 4×</div></section></div>
+<div class="callout" style="margin-top:16px">The calculator reads the versioned settings bundled with this website. Your device's saved deepest-floor progress affects replay rewards, so the displayed replay estimate cannot know a particular player's actual save.</div>
+</main>
+<footer class="site-footer"><span>Dungeon Strider · Offline-first step-counting RPG</span><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="mailto:orayori@outlook.com">Contact</a><a href="https://github.com/Orayori/dungeon-strider">GitHub</a></div></footer>
+<script src="assets/codex-data.js"></script><script src="assets/dungeons.js"></script>
+</body></html>

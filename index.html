@@ -1,33 +1,106 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dungeon Strider</title>
-<meta name="description" content="Dungeon Strider is a step-counting dungeon RPG. Walk in real life to power your character.">
-<style>
-@font-face{font-family:"Jersey 10";src:url("Jersey10-Regular.ttf") format("truetype");font-display:swap}
-:root{--bg:#120E0C;--card:#1d1714;--text:#efe3c8;--dim:#b3a58a;--gold:#f0be50;--line:#3a3028}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:23px/1.45 "Jersey 10",ui-monospace,Consolas,monospace}
-main{max-width:720px;margin:0 auto;padding:48px 20px 64px}
-h1{font-size:3.2rem;line-height:1.1;margin:0 0 8px;color:var(--gold);letter-spacing:.5px}
-h2{font-size:1.8rem;margin:36px 0 8px;color:var(--gold)}
-p,li{color:var(--text)}.dim{color:var(--dim)}
-a{color:var(--gold)}
-ul{padding-left:22px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:12px 0}
-nav{display:flex;flex-wrap:wrap;gap:9px 18px;margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:1.05rem}
-nav a{margin-right:0}
-@media(max-width:600px){main{padding:30px 15px 46px}h1{font-size:2.7rem}body{font-size:20px}nav{gap:8px 14px}}
-</style></head><body><main>
-<h1>Dungeon Strider</h1>
-<p class="dim">A step-counting dungeon RPG.</p>
-<p>Fuel your competitive edge by transforming your <u>real-world steps</u> into valuable Step Coins to purchase elite gear and conquer deep dungeons, ruthlessly dominating rival players with a massive stack of currency that accumulates automatically from every single step you take while offline.
-Invite your friends to download the app today and see who can claim the leaderboard by turning their daily steps into ultimate victory.</p>
-<div class="card">
-<p><b><u>Plays offline:</u></b> The game keeps your progress on your phone, so you can play without a connection.</p>
-<p><b><u>Leaderboards:</u></b> Sign in with Google to join the online leaderboards under a public username you choose. Your Google name and email are never shown to other players.</p>
-</div>
-<h2>Contact</h2>
-<p>Questions, feedback or data requests: <a href="mailto:orayori@outlook.com">orayori@outlook.com</a></p>
-<nav aria-label="Explore Dungeon Strider"><a href="guide.html">How to Play</a><a href="items.html">Item Codex</a><a href="dungeons.html">Dungeon Guide</a><a href="milestones.html">Milestones</a><a href="updates.html">Updates</a><a href="community.html">Community</a><a href="privacy.html">Privacy Policy</a><a href="https://github.com/Orayori">Who Made This?</a><a href="https://buymeacoffee.com/orayori">Buy Me a Coffee &lt;3</a></nav>
-</main></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dungeon Strider · Walk. Gear Up. Descend.</title>
+  <meta name="description" content="Dungeon Strider is an offline-first step-counting RPG. Turn real-world steps into Step Coins, improve your equipment, and explore the dungeon.">
+  <meta name="theme-color" content="#171512">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand-row">
+    <div class="brand-mark" aria-hidden="true">DS</div>
+    <div>
+      <p class="brand-name">DUNGEON STRIDER</p>
+      <p class="brand-tagline">Walk in the real world. Conquer the dungeon.</p>
+    </div>
+  </div>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="guide.html">How to Play</a>
+    <a href="items.html">Item Codex</a>
+    <a href="dungeons.html">Dungeon Guide</a>
+    <a href="milestones.html">Milestones</a>
+    <a href="updates.html">Updates</a>
+    <a href="community.html">Community</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="hero">
+    <p class="eyebrow">An offline-first step-counting RPG</p>
+    <h1>Every step moves your adventure forward.</h1>
+    <p class="lead">Turn real-world movement into Step Coins (SC), strengthen your equipment, and push deeper into a dungeon one floor at a time. Your daily walk is part of your build.</p>
+    <div class="hero-actions">
+      <a class="button" href="guide.html">Start with the guide →</a>
+      <a class="button secondary" href="items.html">Browse equipment</a>
+      <a class="button secondary" href="dungeons.html">Explore the dungeon</a>
+      <a class="button coffee-button" href="https://buymeacoffee.com/orayori" target="_blank" rel="noopener noreferrer">Buy Me a Coffee &lt;3</a>
+    </div>
+  </section>
+
+  <div class="stats" aria-label="Game highlights">
+    <div class="stat"><strong>Steps → SC</strong><span>Earn Step Coins from real-world movement, within game limits</span></div>
+    <div class="stat"><strong>6 slots</strong><span>Build your character with equipment across six slots</span></div>
+    <div class="stat"><strong>50 tiers</strong><span>Progress your equipment through the current tier system</span></div>
+    <div class="stat"><strong>Boss floors</strong><span>Prepare for scheduled boss encounters every ten floors</span></div>
+  </div>
+
+  <h2>Your next steps, Adventurer</h2>
+  <div class="card-grid">
+    <article class="info-card">
+      <div class="icon" aria-hidden="true">📖</div>
+      <h3>Learn the basics</h3>
+      <p>See how steps, Step Coins, leveling, gear and dungeon combat fit together.</p>
+      <p><a href="guide.html">Read How to Play →</a></p>
+    </article>
+    <article class="info-card">
+      <div class="icon" aria-hidden="true">🛡️</div>
+      <h3>Browse the Item Codex</h3>
+      <p>Search equipment by name, slot, rarity and tier. Compare stats and SC prices before investing in upgrades.</p>
+      <p><a href="items.html">Open Item Codex →</a></p>
+    </article>
+    <article class="info-card">
+      <div class="icon" aria-hidden="true">🏰</div>
+      <h3>Plan your descent</h3>
+      <p>Explore dungeon scaling, monsters and boss-floor rules based on the current game data.</p>
+      <p><a href="dungeons.html">Visit Dungeon Guide →</a></p>
+    </article>
+  </div>
+
+  <h2>Built for real life</h2>
+  <div class="two-col">
+    <section class="panel">
+      <h3>Play on your own pace</h3>
+      <p>Your main game progress is stored on your phone, so you can keep playing offline. Walking, upgrading and dungeon runs remain the heart of the experience.</p>
+    </section>
+    <section class="panel">
+      <h3>Online leaderboards are optional</h3>
+      <p>Sign in with Google if you want to participate in online rankings under a public username you choose. Your Google name and email are not shown to other players.</p>
+    </section>
+  </div>
+
+  <section class="panel" style="margin-top:14px">
+    <p class="eyebrow">Questions, ideas or data requests?</p>
+    <h3>Get in touch</h3>
+    <p>Feedback helps make the adventure better. Send a message to <a href="mailto:orayori@outlook.com">orayori@outlook.com</a> or visit the <a href="community.html">Community page</a>.</p>
+    <div class="hero-actions">
+      <a class="button secondary" href="updates.html">See updates</a>
+      <a class="button secondary" href="https://github.com/Orayori">Who made this?</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>Dungeon Strider · Offline-first step-counting RPG</span>
+  <div class="footer-links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:orayori@outlook.com">Contact</a>
+    <a href="https://github.com/Orayori/dungeon-strider">GitHub</a>
+  </div>
+</footer>
+</body>
+</html>
